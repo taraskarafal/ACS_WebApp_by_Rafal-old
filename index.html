@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first ACS application</title>
-    <link rel="stylesheet" href="./app.css"/>
-    <script src="./client.js" defer></script>
-  </head>
-  <body>
-    <style>
-        h1 {color: orange;}
-        h4 {color: blue;}
-    </style>
-    <h4>Azure Communication Services</h4>
-    <h1>Orange ACS Calling App</h1>
-    <input 
-      id="token-input"
-      type="text"
-      placeholder="User access token"
-      style="margin-bottom:1em; height: 3em; width: 200px; background-color: aliceblue;"
-    />
-    </div>
-    <button id="token-submit" type="button">
-        Submit
-    </button>
-    <input 
-      id="callee-id-input"
-      type="text"
-      placeholder="Who would you like to call?"
-      style="margin-bottom:1em; width: 200px; display: block; background-color: aliceblue;"
-    />
-    <div>
-      <button id="call-button" type="button" disabled="true">
-        Start Call
-      </button>
-      &nbsp;
-      <button id="hang-up-button" type="button" disabled="true">
-        Hang Up
-      </button>
-    </div>
-    <script src="./bundle.js"></script>
-  </body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <title>ACS Client</title>
+  </head>
+  <body style="background-color:powderblue;"> 
+    
+    <h1 style="margin-left:10%; margin-top: 10%;"> Calling App</h1>
+    <input 
+      id="callee-phone-input"
+      type="text"
+      placeholder="Put E164 PSTN number"
+      style="margin-bottom:3%; margin-left: 10%; width: 230px;"
+    />
+    <div>  
+      <button id="call-phone-button" type="button">
+        Start Call <i class="fa fa-phone" style=color:red></i>
+      </button>
+      &nbsp;
+      <button id="hang-up-phone-button" type="button" disabled="true">
+        Hang Up 
+      </button>
+      <button id="mute-phone-button" type="button" disabled="true">
+        Mute <i class="fa fa-microphone-slash"></i>
+      </button>   
+      <button id="unmute-phone-button" type="button" disabled="true">
+        Unmute <i class="fa fa-microphone"></i>
+      </button>    
+      <button id="hold-phone-button" type="button" disabled="true">
+        Hold
+      </button> 
+      <button id="resume-phone-button" type="button" disabled="true">
+        Resume
+      </button> 
+      <button id="addParticipant-phone-button" type="button" disabled="true">
+        Add Participant
+      </button> 
+    </div>
+    
+    <script src="./bundle.js"></script>
+  </body>
 </html>
