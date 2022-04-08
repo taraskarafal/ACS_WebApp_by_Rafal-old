@@ -5,7 +5,7 @@ Pass the User Access Token with VOIP scope type in Client.js file at line no 13 
 With the Call enabled telephone number procured in pre-requisites, add it to the Client.js file. Assign your ACS telephone number at line no 24 call = callAgent.startCall([{phoneNumber: phoneToCall}], { alternateCallerId: {phoneNumber: 'ACS Number'}});.
 
   Run the code
-Run npm i on the directory of the project to install dependencies
+Run "npm i" on the directory of the project to install dependencies
 
 Use the webpack-dev-server to build and run your app. Run the following command to bundle application host in on a local webserver:
 
